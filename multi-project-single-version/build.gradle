@@ -29,5 +29,6 @@ task(printversion) << {
 
 beforeReleaseBuild.dependsOn startmessage
 afterReleaseBuild.dependsOn printversion
+commitNewVersion.enabled = false
 
 wrapper.gradleVersion = '2.10'
